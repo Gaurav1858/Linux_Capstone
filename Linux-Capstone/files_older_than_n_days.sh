@@ -9,8 +9,8 @@ read answer
 if [[ "$answer" == "Y" || "$answer" == "y" ]]
 then
   echo "Searching for files older than $day days..."
-  find / -maxdepth 2 -type f -mtime +"$day" -print
+  find . -maxdepth 3 -type f -mtime +"$day" -print
 else
-  echo "Script aborted by user."
+  echo "Script ended."
 fi
 
